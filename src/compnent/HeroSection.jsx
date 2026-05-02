@@ -10,7 +10,7 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setYears((prevYears) => {
-        if (prevYears < 10) {
+        if (prevYears < 13) {
           return prevYears + 1;
         } else {
           clearInterval(interval);
@@ -40,7 +40,7 @@ const HeroSection = () => {
           <span className="text-[#1A4D8F]">Protecting</span> You and Your Family
         </h1>
         <p className="text-gray-600 mb-6 text-justify">
-          Scarlet Macaw Remedies is dedicated to enhancing lives with trusted,
+          Scarlet Biogenics is dedicated to enhancing lives with trusted,
           safe, and effective medicines. We put patients first because your
           well-being matters most.
         </p>

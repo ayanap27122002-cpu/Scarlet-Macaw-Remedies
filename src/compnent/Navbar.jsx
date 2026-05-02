@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { scroller } from 'react-scroll';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
-import Logo from '/navlogo.png';
+import Logo from '/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,15 +51,15 @@ const Navbar = () => {
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
-      <div className="max-w-[1400px] container mx-auto px-4 sm:px-6 lg:px-16 pt-2 relative">
-        <div className="grid grid-cols-3 sm:grid-cols-5 items-center h-[70px] sm:h-16 md:h-24 gap-4">
+      <div className="max-w-[1400px] container mx-auto px-4 sm:px-6 lg:px-16 relative">
+        <div className="grid grid-cols-3 sm:grid-cols-5 items-center h-[90px] sm:h-24 md:h-32 gap-4">
           {/* Logo Section */}
           <RouterLink to={'/'}>
             <div className="col-span-1 flex items-center justify-start z-30 lg:pl-1">
               <img
                 src={Logo}
-                alt="Logo"
-                className="h-[70px] sm:h-14 md:h-24 w-auto z-30"
+                alt="Scarlet Biogenics Logo"
+                className="h-[80px] sm:h-20 md:h-28 w-auto z-30 mix-blend-multiply"
               />
             </div>
           </RouterLink>

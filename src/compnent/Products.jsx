@@ -7,6 +7,8 @@ import Card from './Card'; // Assuming Card is your product display component
 import DROLET from '../assets/Gynecology Range/DROLET.png';
 import UTFOROLL from '../assets/Gynecology Range/UT_FOROLL.png';
 import FOROL_XT from '../assets/Gynecology Range/FOROL_XT.png';
+import PROGELET from '../assets/Gynecology Range/PROGELET.png';
+import MAYOLET_M from '../assets/Gynecology Range/MAYOLET_M.png';
 import OXYLET from '../assets/GP Range/OXYLET.png';
 import LOON from '../assets/GP Range/LOON.png';
 import LOON_M from '../assets/GP Range/LOON_M.png';
@@ -17,6 +19,11 @@ import CASSOWARY from '../assets/Ortho Range/CASSOWARY.png';
 import PUFFIN_6 from '../assets/Ortho Range/PUFFIN_6.png';
 import DICLOFINE_GEL from '../assets/Ortho Range/DICLOFINE_GEL.png';
 import TRAMLET_P from '../assets/Ortho Range/TRAMLET_P.png';
+import CARTEO from '../assets/Ortho Range/CARTEO.png';
+import THIO_D from '../assets/Ortho Range/THIO_D.png';
+import DICLOLET from '../assets/Ortho Range/DICLOLET.png';
+import CARTIER from '../assets/Ortho Range/CARTIER.png';
+
 import MACOPAN from '../assets/Gastro Range/MACOPAN.png';
 import MACOPAN_DSR from '../assets/Gastro Range/MACOPAN_DSR.png';
 import SILVELET from '../assets/Skin Range/SILVELET.png';
@@ -29,22 +36,29 @@ const productsData = [
   { id: 1, image: DROLET, title: 'DROLET', category: 'Gynecology' },
   { id: 2, image: UTFOROLL, title: 'UTFOROLL', category: 'Gynecology' },
   { id: 3, image: FOROL_XT, title: 'FOROL-XT', category: 'Gynecology' },
-  { id: 4, image: OXYLET, title: 'OXYLET', category: 'GP' },
-  { id: 5, image: LOON, title: 'LOON', category: 'GP' },
-  { id: 6, image: LOON_M, title: 'LOON-M', category: 'GP' },
-  { id: 7, image: OXYLET_P, title: 'OXYLET-P', category: 'Pediatric' },
-  { id: 8, image: FINLET, title: 'FINLET', category: 'Pediatric' },
-  { id: 9, image: INSTABONE, title: 'INSTABONE', category: 'Ortho' },
-  { id: 10, image: CASSOWARY, title: 'CASSOWARY', category: 'Ortho' },
-  { id: 11, image: PUFFIN_6, title: 'PUFFIN-6', category: 'Ortho' },
-  { id: 12, image: DICLOFINE_GEL, title: 'DICLOFINE-GEL', category: 'Ortho' },
-  { id: 13, image: TRAMLET_P, title: 'TRAMLET-P', category: 'Ortho' },
-  { id: 14, image: MACOPAN, title: 'MACOPAN', category: 'Gastro' },
-  { id: 15, image: MACOPAN_DSR, title: 'MACOPAN-DSR', category: 'Gastro' },
-  { id: 16, image: FUNGILET_CREAM, title: 'FUNGILET-CREAM', category: 'Skin' },
-  { id: 17, image: SILVELET, title: 'SILVELET', category: 'Skin' },
-  { id: 18, image: MUPIROSE, title: 'MUPIROSE', category: 'Skin' },
-  { id: 19, image: MOBILET_P, title: 'MOBILET-P', category: 'Others' },
+  { id: 4, image: PROGELET, title: 'PROGELET', category: 'Gynecology' },
+  { id: 5, image: MAYOLET_M, title: 'MAYOLET-M', category: 'Gynecology' },
+  { id: 6, image: OXYLET, title: 'OXYLET', category: 'GP' },
+  { id: 7, image: LOON, title: 'LOON', category: 'GP' },
+  { id: 8, image: LOON_M, title: 'LOON-M', category: 'GP' },
+  { id: 9, image: OXYLET_P, title: 'OXYLET-P', category: 'Pediatric' },
+  { id: 10, image: FINLET, title: 'FINLET', category: 'Pediatric' },
+  { id: 24, image: DICLOLET, title: 'DICLOLET GEL', category: 'Ortho' },
+  { id: 11, image: INSTABONE, title: 'INSTABONE', category: 'Ortho' },
+  { id: 12, image: CASSOWARY, title: 'CASSOWARY', category: 'Ortho' },
+  { id: 13, image: PUFFIN_6, title: 'PUFFIN-6', category: 'Ortho' },
+  { id: 14, image: DICLOFINE_GEL, title: 'DICLOFINE GEL', category: 'Ortho' },
+  { id: 15, image: TRAMLET_P, title: 'TRAMLET-P', category: 'Ortho' },
+  { id: 22, image: CARTEO, title: 'CARTEO', category: 'Ortho' },
+  { id: 23, image: THIO_D, title: 'THIO-D', category: 'Ortho' },
+  { id: 25, image: CARTIER, title: 'CARTIER', category: 'Ortho' },
+
+  { id: 16, image: MACOPAN, title: 'MACOPAN', category: 'Gastro' },
+  { id: 17, image: MACOPAN_DSR, title: 'MACOPAN-DSR', category: 'Gastro' },
+  { id: 18, image: FUNGILET_CREAM, title: 'FUNGILET-CREAM', category: 'Skin' },
+  { id: 19, image: SILVELET, title: 'SILVELET', category: 'Skin' },
+  { id: 20, image: MUPIROSE, title: 'MUPIROSE', category: 'Skin' },
+  { id: 21, image: MOBILET_P, title: 'MOBILET-P', category: 'Others' },
 ];
 
 const Products = () => {
@@ -100,11 +114,10 @@ const Products = () => {
           <button
             key={category}
             onClick={() => handleCategoryChange(category)}
-            className={`px-4 py-2 rounded-md font-medium ${
-              selectedCategory === category
-                ? 'bg-[#036ba2] text-white'
-                : 'bg-gray-200 text-gray-800'
-            }`}
+            className={`px-4 py-2 rounded-md font-medium ${selectedCategory === category
+              ? 'bg-[#036ba2] text-white'
+              : 'bg-gray-200 text-gray-800'
+              }`}
           >
             {category}
           </button>
@@ -139,7 +152,7 @@ const Products = () => {
         </h2>
         <p className="text-lg text-white mb-8 text-justify sm:text-center">
           Have a vision for innovative healthcare solutions? Contact Scarlet
-          Macaw Remedies today to explore how our high-quality medicines and
+          Biogenics today to explore how our high-quality medicines and
           expertise can help bring it to life. Together, we can enhance lives
           and shape a healthier future.
         </p>

@@ -62,7 +62,7 @@ const AboutPage = () => {
     if (isCountInView) {
       const interval1 = setInterval(() => {
         setCount1((prev) => {
-          if (prev < 10) return prev + 1;
+          if (prev < 13) return prev + 1;
           clearInterval(interval1);
           return prev;
         });
@@ -156,7 +156,7 @@ const AboutPage = () => {
           >
             <img
               src={ABOUT}
-              alt="About Scarlet Macaw Remedies"
+              alt="About Scarlet Biogenics"
               className="w-full max-w-sm md:max-w-md lg:max-w-xl h-auto object-contain"
             />
           </motion.div>
@@ -180,7 +180,7 @@ const AboutPage = () => {
               animate={isIntroView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
-              Since 2014, Scarlet Macaw Remedies has been a trusted
+              Since 2014, Scarlet Biogenics has been a trusted
               pharmaceutical company providing high-quality medicines
               nationwide. As a sister concern of Scarlet Pharma, we collaborate
               with leading manufacturers like Labindus, VTV, and Novel India to

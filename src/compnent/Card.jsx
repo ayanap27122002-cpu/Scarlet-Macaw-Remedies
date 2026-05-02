@@ -15,7 +15,7 @@ const Card = ({ image, title, description, buttonText }) => {
             <img
                 src={image}
                 alt={title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover bg-white"
             />
 
             {/* Card Content */}

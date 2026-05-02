@@ -92,9 +92,9 @@ const ContactUs = () => {
               </h3>
             </div>
             <p className="text-gray-700">
-              12/1207F, 1&apos;st Floor, Apple Square Building, Airport road
+              60/5202-B, Second Floor, Sastha Complex, East Tali
               <br />
-              Ramanattukara, Kozhikode, 673633, Kerala
+              Chalappuram P O, Kozhikode, Kerala - 673002
             </p>
           </div>
 

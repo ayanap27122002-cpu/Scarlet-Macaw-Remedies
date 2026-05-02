@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {/* <!-- Logo Section --> */}
           <div className="flex justify-center items-center lg:justify-end pt-0 sm:-mt-10 mr-0 lg:mr-10">
-            <img className="h-16 sm:h-20" src={LOGO} alt="Logo" />
+            <img className="h-24 sm:h-32 mix-blend-multiply" src={LOGO} alt="Scarlet Biogenics Logo" />
           </div>
 
           {/* <!-- Description Section --> */}
@@ -57,8 +57,8 @@ const Footer = () => {
           <div className="sm:pt-4">
             <h6 className="mb-2 font-bold uppercase">Visit us</h6>
             <p>
-              12/1207F, 1&apos;st Floor, Apple Square Building, Airport road,
-              Ramanattukara, Kozhikode, 673633, Kerala
+              60/5202-B, Second Floor, Sastha Complex, East Tali,
+              Chalappuram P O, Kozhikode, Kerala - 673002
             </p>
           </div>
         </div>
