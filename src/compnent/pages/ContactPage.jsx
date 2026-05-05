@@ -125,7 +125,7 @@ const ContactUs = () => {
                 MAIL US
               </h3>
             </div>
-            <p className="text-gray-700">scarletmacawremediesclt@outlook.com</p>
+            <p className="text-gray-700">scarletpharma24@gmail.com</p>
           </div>
         </motion.div>
 
