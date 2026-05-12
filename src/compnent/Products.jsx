@@ -17,7 +17,6 @@ import FINLET from '../assets/Pediatric Range/FINLET.png';
 import INSTABONE from '../assets/Ortho Range/INSTABONE.png';
 import CASSOWARY from '../assets/Ortho Range/CASSOWARY.png';
 import PUFFIN_6 from '../assets/Ortho Range/PUFFIN_6.png';
-import DICLOFINE_GEL from '../assets/Ortho Range/DICLOFINE_GEL.png';
 import TRAMLET_P from '../assets/Ortho Range/TRAMLET_P.png';
 import CARTEO from '../assets/Ortho Range/CARTEO.png';
 import THIO_D from '../assets/Ortho Range/THIO_D.png';
@@ -47,7 +46,6 @@ const productsData = [
   { id: 11, image: INSTABONE, title: 'INSTABONE', category: 'Ortho' },
   { id: 12, image: CASSOWARY, title: 'CASSOWARY', category: 'Ortho' },
   { id: 13, image: PUFFIN_6, title: 'PUFFIN-6', category: 'Ortho' },
-  { id: 14, image: DICLOFINE_GEL, title: 'DICLOFINE GEL', category: 'Ortho' },
   { id: 15, image: TRAMLET_P, title: 'TRAMLET-P', category: 'Ortho' },
   { id: 22, image: CARTEO, title: 'CARTEO', category: 'Ortho' },
   { id: 23, image: THIO_D, title: 'THIO-D', category: 'Ortho' },

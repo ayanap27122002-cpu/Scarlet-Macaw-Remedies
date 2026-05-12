@@ -94,7 +94,10 @@ const Navbar = () => {
 
           {/* Contact Section */}
           <div className="hidden lg:flex items-center justify-end col-span-1">
-            <div className="text-[#fff] bg-yellow-500 py-2 px-4 rounded-lg text-sm md:text-lg font-semibold flex items-center">
+            <a
+              href="tel:04954054865"
+              className="text-[#fff] bg-yellow-500 py-2 px-4 rounded-lg text-sm md:text-lg font-semibold flex items-center hover:bg-yellow-600 transition-colors"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -107,8 +110,8 @@ const Navbar = () => {
                   clipRule="evenodd"
                 />
               </svg>
-              <p>+91 9061004666</p>
-            </div>
+              <span>0495 4054865</span>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}

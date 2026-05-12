@@ -32,6 +32,7 @@ const ContactUs = () => {
     const VITE_EMAILJS_TEMPLATE_ID = 'template_c2taj5u';
     const VITE_EMAILJS_PUBLIC_KEY = 'M67wV3Sy7j26cB7CV';
     try {
+      emailjs.init(VITE_EMAILJS_PUBLIC_KEY);
       const result = await emailjs.send(
         VITE_EMAILJS_SERVICE_ID, // Replace with your service ID
         VITE_EMAILJS_TEMPLATE_ID, // Replace with your template ID
@@ -41,7 +42,9 @@ const ContactUs = () => {
           email,
           message,
         },
-        VITE_EMAILJS_PUBLIC_KEY // Replace with your public key
+        {
+          publicKey: VITE_EMAILJS_PUBLIC_KEY, // Replace with your public key
+        }
       );
 
       setResponseMessage('Your message has been sent successfully!');
@@ -110,7 +113,9 @@ const ContactUs = () => {
                 CALL US
               </h3>
             </div>
-            <p className="text-gray-700">+91 9061004666 , +91 4954066444</p>
+            <a href="tel:04954054865" className="text-gray-700 hover:text-yellow-600 transition-colors block">
+              0495 4054865
+            </a>
           </div>
 
           <div>
@@ -125,7 +130,9 @@ const ContactUs = () => {
                 MAIL US
               </h3>
             </div>
-            <p className="text-gray-700">scarletpharma24@gmail.com</p>
+            <a href="mailto:scarletpharma24@gmail.com" className="text-gray-700 hover:text-yellow-600 transition-colors block">
+              scarletpharma24@gmail.com
+            </a>
           </div>
         </motion.div>
 
