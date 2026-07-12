@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="sm:pt-4">
             <h6 className="mb-2 font-bold uppercase">Inquiries</h6>
             <p className="mb-2 flex items-center justify-center md:justify-start">
-              <a href="tel:04954054865" className="flex items-center hover:text-yellow-600 transition-colors">
+              <a href="tel:8089057585" className="flex items-center hover:text-yellow-600 transition-colors">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -38,7 +38,7 @@ const Footer = () => {
                     clipRule="evenodd"
                   />
                 </svg>
-                0495 4054865
+                8089057585
               </a>
             </p>
             <p className="flex items-center justify-center md:justify-start">
